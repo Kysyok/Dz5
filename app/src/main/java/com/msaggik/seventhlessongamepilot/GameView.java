@@ -65,7 +65,7 @@ public class GameView extends SurfaceView implements Runnable{
 
         // задание скорости подъёма и снижения самолёта
         if (flight.isGoingUp()) { // условие подъёма
-            flight.setY(flight.getY() - (int)(30 * screenRatioY));
+            flight.setY(screenY / 2);
         } else { // условие снижения
             flight.setY(flight.getY() + (int)(30 * screenRatioY));
         }
